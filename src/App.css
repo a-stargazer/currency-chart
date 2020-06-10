@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS from HW #1 */
+
+:root {
+  --bg-color: #fab7b7;
+  --page-spacing: 60px;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+}
+
+.NavBar {
+  background-color: #e19999;
+  padding: var(--page-spacing);
+}
+
+.NavBar-heading {
+    color: white;
+}
+
+.BarChart {
+  align-items: end;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 75vh;
+  margin-left: var(--page-spacing);
+  width: 90vw;
+
+}
+
+.BarChart-bar {
+
+  background-color: #f1d1d1;
+  box-sizing: border-box;
+  bottom: 0px;
+  color: #af8baf;
+  font-size: 28px;
+  justify-content: center;
+  margin-left: var(--page-spacing);
+  margin-right: var(--page-spacing);
+  margin-bottom: -40px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.BarChart-bar:hover {
+  background-color: #dddddd;
+}
